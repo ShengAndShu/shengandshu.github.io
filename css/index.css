@@ -14,6 +14,7 @@ body{
 	color: #eef3f0;
 	transition: 0.5s;
 	text-align: center;
+	overflow: hidden;
 }
 .fl{
 	float: left;
@@ -157,7 +158,7 @@ a:hover{
 }
 #exp-row-1,#exp-row-2,#exp-row-3{
 	width: 100%;
-	height: 150px;
+	height: 140px;
 	position: relative;
 	bottom: -20%;
 	opacity: 0;
@@ -486,7 +487,7 @@ a:hover{
 		background: #3dadb1;
 	}
 	.wrapper{
-	margin: 0 6% 8% 6%;
+	margin: 0 6% 6% 6%;
 	}
 	.demo-list a{
 		display: inline-block;
