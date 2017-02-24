@@ -7,26 +7,7 @@ $(function(){
 		scrollingSpeed: 600,
 		css3: true,
 		anchors: ["page1","page2","page3","page4","page5"],
-		keyboardScrolling: false,
-		onLeave: function(index,nextIndex,direction){
-			if(nextIndex==4){
-				var $_exp_line = $("#exp-line");
-				var $_exp_row_1 = $("#exp-row-1");
-				var $_exp_row_2 = $("#exp-row-2");
-				var $_exp_row_3 = $("#exp-row-3");
-				$_exp_line.css({top:"30%",opacity:"0"});
-				$_exp_row_1.css({bottom:"-20%",opacity:"0"});
-				$_exp_row_2.css({bottom:"-20%",opacity:"0"});
-				$_exp_row_3.css({bottom:"-20%",opacity:"0"});
-				$_exp_line.stop(true,true).animate({top:"5%",opacity:"1"},500,function(){
-					$_exp_row_1.stop(true,true).animate({bottom:"0",opacity:"1"},500,function(){
-						$_exp_row_2.stop(true,true).animate({bottom:"0",opacity:"1"},500,function(){
-							$_exp_row_3.stop(true,true).animate({bottom:"0",opacity:"1"},500)
-						})
-				    })
-				})
-			}
-		}
+		keyboardScrolling: false
 	});
 	$("#demo-2-show").click(function(){
 		$("#demo-mask").css({"display":"block"});

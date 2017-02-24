@@ -20,32 +20,32 @@ body{
 	float: left;
 }
 p{
-	font-size: 1.1em;
+	font-size: 20px;
 	color: #c8dede;
-	margin: 0.5em 0;
+	margin: 10px 0;
 }
 h1{
 	font-weight: bold;
 	font-size: 60px;
 	text-shadow: 1px 2px #4bbfc3,2px 4px #c8dede;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 h4{
 	font-weight: bold;
-	font-size: 1.25em;
-	margin: 0.5em 0;
+	font-size: 23px;
+	margin: 5px;
 }
 a{
 	text-decoration: none;
-	color: #13686b;
-	font-size: 1.1em;
+	color: #ced2d2;
+	font-size: 18px;
 	cursor: pointer;
 	display: inline-block;
 	transition: 0.5s;
 	margin: 0 5px 0 5px;
 }
 a:hover{
-	color: #09f5fd;
+	color: #00f6ff;
 }
 .clear:after{
 	content: "";
@@ -68,7 +68,7 @@ a:hover{
 }
 
 .wrapper{
-	margin: 0 20% 1% 20%;
+	margin: 0 30% 1% 30%;
 	position: relative;
 }
 
@@ -124,6 +124,62 @@ a:hover{
 	animation-delay:1.5s;
 }
 
+@-webkit-keyframes rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -30deg);
+    transform: rotate3d(0, 0, 1, -30deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    z-index: 99;
+  }
+}
+
+@keyframes rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -30deg);
+    transform: rotate3d(0, 0, 1, -30deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    z-index: 99;
+  }
+}
+.active #exp-row-1{
+	-webkit-animation: rotateInDownLeft .8s ease;
+	animation: rotateInDownLeft .8s ease both;
+	-webkit-animation-delay:.4s;
+	animation-delay:.4s;
+}
+.active #exp-row-2{
+	-webkit-animation: rotateInDownLeft .8s ease;
+	animation: rotateInDownLeft .8s ease both;
+	-webkit-animation-delay:.8s;
+	animation-delay:.8s;
+}
+.active #exp-row-3{
+	-webkit-animation: rotateInDownLeft .8s ease;
+	animation: rotateInDownLeft .8s ease both;
+	-webkit-animation-delay:1.2s;
+	animation-delay:1.2s;
+}
+
 #experience{
 	background: #3dadb1;
 }
@@ -158,10 +214,8 @@ a:hover{
 }
 #exp-row-1,#exp-row-2,#exp-row-3{
 	width: 100%;
-	height: 140px;
+	height: 130px;
 	position: relative;
-	bottom: -20%;
-	opacity: 0;
 }
 .time-wrapper,.circle-wrapper,.desc-wrapper{
 	position: relative;
@@ -177,19 +231,19 @@ a:hover{
 	width:60%;
 }
 .exp-circle{
+	display: block;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
 	border: 10px solid #268c90;
-	z-index:2;
+	z-index:99;
 	background-color: #3dadb1;
 }
 #exp-line{
 	position: absolute;
 	background-color: #268c90;
-	opacity: 0;
 	left: 35%;
-	top: 30%;
+	top: 5%;
 	width: 2px;
 	height: 90%;
 }
@@ -275,7 +329,6 @@ a:hover{
 	-webkit-animation-delay:2.4s;
 	animation-delay:2.4s;
 }
-
 #skill .circle-img:hover img{
 	-ms-transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
@@ -473,8 +526,10 @@ a:hover{
 }  
   
 .active .wobble {  
-  -webkit-animation: wobble 1s;  
-          animation: wobble 1s;  
+    -webkit-animation: wobble 1s;  
+    animation: wobble 1s;
+	-webkit-animation-delay:.3s;
+	animation-delay:.3s;
 }
 
 @media only screen and (max-width: 767px){
@@ -502,5 +557,18 @@ a:hover{
 		width: 49%;
 		margin-bottom: 5px;
 		float: left;
+	}
+	h1{
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+	h4{
+		font-size: 18px;
+	}
+	a{
+		font-size: 15px;
+	}
+	p{
+		font-size: 16px;
 	}
 }
