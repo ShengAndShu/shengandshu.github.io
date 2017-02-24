@@ -34,7 +34,7 @@ $(function(){
 			"height":300
 		}).html("<canvas id='snake'></canvas> <div id='show-close'>X</div>");
 		$("#snake").snake({
-			row: 50,
+			row: 35,
 			col: 30,
 			keyWidth: 50
 		});
