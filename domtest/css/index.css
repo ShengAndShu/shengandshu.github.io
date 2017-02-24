@@ -1,0 +1,254 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	color: #ddd;
+	height: 100%;
+	background-color: #444;
+	font: 15px/1.5 "微软雅黑","宋体",Arial, Helvetica, sans-serif;
+}
+.fl{
+	float: left;
+}
+h1{
+	font-weight: bold;
+	font-size: 25px;
+}
+p{
+	font-size: 15px;
+}
+p.color_green{
+	color: #6fe771;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.banner{
+	height: 350px;
+}
+.banner_1+nav ul li:nth-of-type(1){
+	background-color: #421b1b;
+}
+.banner_2+nav ul li:nth-of-type(2){
+	background-color: #421b1b;
+}
+.banner_3+nav ul li:nth-of-type(3){
+	background-color: #421b1b;
+}
+.banner_4+nav ul li:nth-of-type(4){
+	background-color: #421b1b;
+}
+.banner_5+nav ul li:nth-of-type(5){
+	background-color: #421b1b;
+}
+header nav{
+	background: #272626;
+	border-top: 2px solid #000;
+}
+header nav ul{
+	width: 100%;
+	overflow: hidden;
+}
+header nav li{
+	float: left;
+	width: 20%;
+	border-right: 1px solid #555;
+}
+header nav li:last-child{
+	border-right: none;
+}
+header nav li a{
+	display: block;
+	height: 30px;
+	padding: 5px 20px;
+	color: #eee;
+	text-decoration: none;
+	text-align: center;
+	font: bold 15px/1.5 arial,sans-serif;
+}
+header nav li a:hover{
+	background-color: #5a2626;
+}
+article{
+	background: #111;
+	position: relative;
+}
+article:after{
+	clear: both;
+	visibility: hidden;
+	content: "";
+	height: 0;
+	display: block;
+}
+/*index-------start*/
+.wrapper{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+#avatar{
+	height: 500px;
+	width: 300px;
+	background: #5a2626;
+	padding: 32px;
+	margin: 10px;
+}
+#avatar>img{
+	display: block;
+	padding: 3px;
+	border: 1px solid #000;
+}
+#avatar h1{
+	background: url(../images/mirana_icon.png) no-repeat 0 0;
+	padding-left: 40px;
+	width: 120px;
+	margin: 5px auto;
+}
+#avatar li{
+	margin-bottom: 2px;
+	padding: 5px;
+	background-color: #3c1c1c;
+}
+#mirana_des{
+	padding: 10px;
+	margin: 10px;
+	width: 650px;
+}
+#mirana_des p{
+	line-height: 2;
+}
+/*index-------end*/
+
+/*skill --------start*/
+.content_wrapper{
+	width: 1000px;
+	height: 500px;
+	background-color: #111;
+	padding: 15px;
+}
+.content_wrapper h1{
+	border-bottom: 3px solid #5a2626;
+	margin-bottom: 10px;
+}
+#skill ul{
+	position: relative;
+}
+#skill ul:after{
+	clear: both;
+	visibility: hidden;
+	content: "";
+	height: 0;
+	display: block;
+}
+#skill ul li{
+	cursor: pointer;
+	float: left;
+	width: 150px;
+	height: 35px;
+	padding: 5px;
+	border: 1px solid #333;
+	background: #212121;
+}
+.skill_des{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 600px;
+	padding-top: 10px;
+	cursor: default;
+}
+#skill ul li.skill_show{
+	background-color: #5a2626;
+}
+.skill_show .skill_des{
+	display: block;
+}
+/*skill----end*/
+
+/*point----start*/
+.point_wrap{
+	width: 644px;
+	height: 38px;
+	margin-top: 5px;
+}
+.point_wrap img{
+	width: 38px;
+	height: 38px;
+	float: left;
+}
+.point_wrap ul{
+	width: 604px;
+	height: 35px;
+	overflow: hidden;
+	padding: 4px 0 0 6px;
+	float: left;
+}
+
+.point_wrap ul li{
+	width: 31px;
+	height: 31px;
+	margin-right: 2px;
+	float: left;
+	display: inline;
+	background-color: #1d1e1f;
+	text-align: center;
+	line-height: 31px;
+}
+/*point-------end*/
+
+/*tip-------start*/
+#tip{
+	position: relative;
+}
+#tip ul{
+	float: left;
+	width: 200px;
+	height: 400px;
+	border-right: 1px solid #333;
+}
+#tip ul li{
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+}
+#tip ul section{
+	display: none;
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 250px;
+    top: 70px;
+    cursor: default;
+}
+#tip ul li.tip_show{
+	background: #5a2626;
+}
+#tip ul .tip_show section{
+	display: block;
+}
+/*tip-------end*/
+
+/*contact------start*/
+#contact input,#contact label,#contact textarea{
+	display: block;
+}
+#contact input,#contact label,#contact textarea{
+	margin-bottom: 10px;
+}
+
+/*banner_image*/
+.banner_1{
+	background: url(../images/1.jpg) no-repeat 0 0;
+}
+.banner_2{
+	background: url(../images/2.jpg) no-repeat 0 0;
+}
+.banner_3{
+	background: url(../images/3.jpg) no-repeat 0 0;
+}
+.banner_4{
+	background: url(../images/4.jpg) no-repeat 0 0;
+}
+.banner_5{
+	background: url(../images/5.jpg) no-repeat 0 0;
+}
