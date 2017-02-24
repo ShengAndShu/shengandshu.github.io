@@ -544,9 +544,6 @@ a:hover{
 	.wrapper{
 	margin: 0 6% 6% 6%;
 	}
-	.demo-list a{
-		display: inline-block;
-	}
 	.demo-list img{
 		float: left;
 	}
