@@ -31,11 +31,11 @@ $(function(){
 		$("#demo-show").css({
 			"display":"block",
 			"width":350,
-			"height":300
+			"height":200
 		}).html("<canvas id='snake'></canvas> <div id='show-close'>X</div>");
 		$("#snake").snake({
 			row: 35,
-			col: 30,
+			col: 20,
 			keyWidth: 50
 		});
 		$('#demo-mask,#show-close').click(function(){
