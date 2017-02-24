@@ -13,8 +13,8 @@ $(function(){
 		$("#demo-mask").css({"display":"block"});
 		$("#demo-show").css({
 			"display":"block",
-			"width":350,
-			"height":300
+			"width":"350px",
+			"height":"300px"
 		}).html("<canvas id='colorClock'></canvas> <div id='show-close'>X</div>");
 		$("#colorClock").colorClock({
 			canvasWidth: 350,
@@ -30,8 +30,9 @@ $(function(){
 		$("#demo-mask").css({"display":"block"});
 		$("#demo-show").css({
 			"display":"block",
-			"width":350,
-			"height":200
+			"width":"350px",
+			"height":"200px",
+			"margin-bottom":"200px"
 		}).html("<canvas id='snake'></canvas> <div id='show-close'>X</div>");
 		$("#snake").snake({
 			row: 35,
