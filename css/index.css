@@ -533,22 +533,11 @@ a:hover{
 }
 
 @media only screen and (max-width: 767px){
-	.demo-list{
-		float: none;
-		width: 100%;
-		height: 32%;
-		padding: 1%;
-		margin: 1%;
-		background: #3dadb1;
+	#pp-nav{
+		display: none;
 	}
 	.wrapper{
 	margin: 0 6% 6% 6%;
-	}
-	.demo-list img{
-		float: left;
-	}
-	#pp-nav{
-		display: none;
 	}
 	.skill-list{
 		width: 49%;
@@ -560,7 +549,23 @@ a:hover{
 		margin-bottom: 20px;
 	}
 	h4{
+		font-size: 20px;
+	}
+	.demo-list{
+		float: none;
+		width: 100%;
+		height: 32%;
+		padding: 1%;
+		margin: 1%;
+		background: #3dadb1;
+	}
+	.demo-list img{
+		float: left;
+	}
+	.demo-list a{
+		display: inline-block;
 		font-size: 18px;
+		margin-top: 10px;
 	}
 	a{
 		font-size: 15px;
