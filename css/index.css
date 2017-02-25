@@ -432,6 +432,8 @@ a:hover{
 	display: none;
 	background: #fff;
 	z-index: 100;
+	width: 350px;
+	height: 200px;
 }
 #show-close{
 	position: absolute;
