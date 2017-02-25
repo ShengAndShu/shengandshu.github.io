@@ -7,7 +7,7 @@ html,body{
 	overflow: hidden;
 }
 body{
-	font: 1.1em "Microsoft Yahei";
+	font: 1.1em arial,"Microsoft Yahei",sans-serif;
 }
 .section{
 	background: #4BBFC3;
@@ -37,7 +37,7 @@ h4{
 }
 a{
 	text-decoration: none;
-	color: #fff;
+	color: #3e6d6f;
 	font-size: 18px;
 	cursor: pointer;
 	display: inline-block;
