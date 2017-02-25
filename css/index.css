@@ -596,9 +596,8 @@ a:hover{
 	.demo-list img{
 		float: left;
 	}
-	.demo-list a{
+	.demo-list p{
 		display: inline-block;
-		font-size: 18px;
 		margin-top: 10px;
 	}
 	a{
