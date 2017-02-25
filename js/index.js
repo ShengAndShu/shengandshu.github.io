@@ -19,7 +19,8 @@ $(function(){
 		$("#colorClock").colorClock({
 			canvasWidth: 350,
 			canvasHeight: 300,
-			paddingTop: 50
+			paddingTop: 50,
+			paddingLeft: 0
 		});
 		$('#demo-mask,#show-close').click(function(){
 			$("#demo-mask").css({"display":"none"});
