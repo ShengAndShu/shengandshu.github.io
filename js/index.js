@@ -7,6 +7,7 @@ $(function(){
 		scrollingSpeed: 600,
 		css3: true,
 		anchors: ["page1","page2","page3","page4","page5"],
+		menu: "#menu",
 		keyboardScrolling: false
 	});
 	$("#demo-2-show").click(function(){
@@ -40,5 +41,11 @@ $(function(){
 			$("#demo-mask").css({"display":"none"});
 			$("#demo-show").css({"display":"none"}).html("");
 		});
+	});
+	$("#menu-wrapper").click(function(){
+		$("#menu").slideToggle()
+	});
+	$(".section").click(function(){
+		$("#menu").slideUp()
 	});
 });
