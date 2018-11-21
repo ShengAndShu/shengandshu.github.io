@@ -295,10 +295,10 @@ THE SOFTWARE.
 @angular/animations
 MIT
 
-@angular/forms
+@angular/platform-browser
 MIT
 
-@angular/platform-browser
+@angular/forms
 MIT
 
 date-fns
@@ -315,22 +315,13 @@ MIT
 @ngx-translate/http-loader
 MIT
 
-@ngrx/store
-MIT
-
-@ngrx/effects
-MIT
-
-@ngrx/router-store
+@ngx-translate/core
 MIT
 
 @angular/core
 MIT
 
 @angular/compiler
-MIT
-
-@ngx-translate/core
 MIT
 
 core-js
