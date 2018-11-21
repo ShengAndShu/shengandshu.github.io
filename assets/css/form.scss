@@ -1,0 +1,347 @@
+.ui-widget-content, .ui-widget, .ui-inputtext {
+  color: #666;
+  font-size: 12px;
+  font-family: "Microsoft Yahei", serif;
+}
+.ui-button {
+  color: #fff;
+}
+.ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button {
+  border-color: #6cb5ec;
+  background: #6cb5ec;
+}
+.ui-widget {
+  input, select, textarea, button {
+    color: #666;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", serif;
+  }
+  &.ui-state-focus {
+    box-shadow: none;
+  }
+  &.ui-inputtext {
+    &.ui-state-default {
+      border: 1px solid #b9c0c8;
+    }
+    &.ng-dirty.ng-invalid {
+      border: 1px solid #f5222d;
+    }
+    &:enabled:focus {
+      box-shadow: none;
+      border-color: #68768b;
+    }
+  }
+  .ui-state-highlight {
+    background-color: #6cb5ec;
+  }
+  .ui-treenode-selectable, .ui-selectable-row {
+    outline: none;
+  }
+}
+
+.ui-chkbox-box.ui-state-active, .ui-radiobutton-box.ui-state-active {
+  border: 1px solid #6cb5ec;
+  background: #6cb5ec;
+}
+.ui-chkbox-label {
+  cursor: pointer;
+  &.ui-label-disabled {
+    color: #aaa;
+    cursor: default;
+  }
+}
+
+.form-single-row {
+  padding: 15px 2px;
+  font-size: 14px;
+  input {
+    margin-left: 6px;
+    padding: 2px 6px;
+    height: 28px;
+  }
+  &+label:not(:first-child) {
+    margin-left: 8px;
+  }
+  &.small {
+    padding: 10px 2px;
+    font-size: 12px;
+    input {
+      margin-left: 2px;
+    }
+  }
+}
+.btn-default, .btn-cancel {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 10px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #b9bfc7;
+  background-color: #eef1f6;
+  color: #737c93 !important;
+  font-size: 14px;
+  font-weight: bold;
+  user-select: none;
+  &:hover {
+    background-image: linear-gradient(to top, #d4d5d8, #f0f2f6);
+  }
+}
+.btn-cancel {
+  background-image: linear-gradient( to top, #eceeef, #fff)
+}
+.btn-blue {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 26px;
+  border-radius: 3px;
+  background-color: #49a1d5;
+  color: #fff !important;
+  cursor: pointer;
+  &:hover {
+    background-color: #169BD5;
+  }
+}
+textarea.ng-touched.ng-invalid {
+  border-color: #f00;
+}
+.ui-tooltip-text {
+  line-height: 18px;
+}
+/*tree*/
+.ui-tree {
+  width: 100%;
+  border: none;
+  .ui-treenode {
+    padding: 0;
+    line-height: 26px;
+  }
+  .ui-treenode-content {
+    cursor: default;
+  }
+  .ui-treenode-content-selected {
+    background-color: #C0D4ED;
+    outline: none;
+  }
+  .ui-treenode-content:not(.ui-treenode-selectable) div.ui-chkbox{
+    display: none;
+    visibility: hidden;
+  }
+  .ui-treenode-content:not(.ui-treenode-content-selected):hover {
+    background-color: #DBEEFF;
+  }
+  .ui-state-highlight {
+    background-color: #C0D4ED;
+    color: inherit;
+  }
+  .ui-treenode-content.ui-treenode-selectable .ui-treenode-label:not(.ui-state-highlight):hover {
+    border: none;
+    background: transparent;
+    color: inherit;
+  }
+  &.small .ui-treenode {
+    line-height: 22px;
+  }
+  &.cursor-default .ui-treenode-selectable.ui-treenode-content {
+    cursor: default;
+  }
+  .ui-treenode-icon {
+    color: #aaa;
+    font-size: 16px;
+  }
+  .fa-file {
+    font-size: 14px;
+  }
+  .ui-tree-container {
+    overflow: hidden;
+  }
+  &.overflow-visible .ui-tree-container {
+    overflow: visible;
+  }
+}
+/*select button*/
+.ui-selectbutton {
+  &.bigger {
+    .ui-button {
+      padding: 3px 9px;
+    }
+  }
+  .ui-button {
+    padding: 3px 6px;
+    &.ui-state-default {
+      border: none;
+      color: #666;
+      font: 12px "Microsoft Yahei";
+      background-color: transparent;
+    }
+    &.ui-state-active {
+      border: none;
+      background: #6cb5ec;
+      color: #fff;
+      &.ui-state-focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+/*calendar*/
+.ui-datepicker {
+  width: auto;
+}
+.ui-calendar {
+  margin-right: 26px;
+  .ui-datepicker.ui-widget .ui-datepicker-calendar {
+    td a {
+      padding: 6px 8px;
+      &.ui-state-active {
+        background-color: #6cb5ec;
+      }
+    }
+  }
+  .ui-timepicker {
+    padding: 0;
+  }
+  .ui-inputtext {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .pi-calendar {
+    font-size: 16px;
+  }
+}
+
+/*dialog*/
+.ui-dialog {
+  border: none;
+  &.ui-widget .ui-dialog-titlebar {
+    padding: 0 8px;
+    height: 36px;
+    line-height: 36px;
+    background: #3c4d66;
+    color: #fff;
+    cursor: default;
+  }
+  .ui-dialog-titlebar-icon {
+    margin-top: 10px;
+    color: #fff;
+    vertical-align: middle;
+  }
+  .ui-dialog-titlebar-icon:hover {
+    border-color: transparent;
+    background: transparent;
+    color: #fff;
+  }
+  .btn-default, .btn-cancel {
+    width: 76px;
+    line-height: 24px;
+  }
+  .dialog-btn-container {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+  .ui-dialog-footer {
+    padding: 0;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/*message*/
+.ui-toast {
+  left: 50%;
+  transform: translate(-50%, 0);
+  .ui-toast-summary {
+    display: none;
+  }
+  .ui-toast-icon {
+    top: 3px;
+  }
+  .ui-toast-message {
+    color: #fff;
+    &.ui-toast-message-info {
+      background-color: #2196f3;
+    }
+    &.ui-toast-message-success {
+      background-color: #4CAF50;
+    }
+    &.ui-toast-message-warn {
+      background-color: #FFB300;
+    }
+    &.ui-toast-message-error {
+      background-color: #f44336;
+    }
+  }
+}
+
+ // radio
+.ui-radiobutton{
+  .ui-radiobutton-box{
+    width: 16px;
+    height: 16px;
+  }
+  .ui-radiobutton-icon{
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -6px;
+  }
+  &+.ui-radiobutton-label {
+    cursor: pointer;
+  }
+}
+.checks{
+  .ui-button-text-only .ui-button-text{
+    padding: 0!important;
+  }
+}
+.child{
+  .ui-chkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 85px;
+  }
+}
+
+// slider
+.ui-slider {
+  display: inline-block;
+  .ui-slider-handle {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background: none;
+  }
+}
+
+// dropdown
+.ui-dropdown-panel {
+  .ui-dropdown-list{
+    padding: 2px;
+    .ui-dropdown-item {
+      padding: 2px 6px;
+    }
+  }
+}
+
+// contextmenu
+.ui-contextmenu {
+  width: auto;
+  min-width: 90px;
+  .ui-menuitem-link {
+    padding: 3px 8px;
+  }
+  .ui-menuitem-icon {
+    width: 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.ui-multiselect {
+  .ui-multiselect-label {
+    height: 100%;
+    white-space: nowrap;
+  }
+}

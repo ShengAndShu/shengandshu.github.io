@@ -1,0 +1,116 @@
+//label里dropdown
+.dropWidth{
+  .ui-dropdown{
+    width: 129px!important;
+  }
+}
+.terminalTabs{
+  .labelDrop{
+    font-size: 14px;
+  }
+  .ui-widget.ui-state-default.ui-corner-all.ui-helper-clearfix{
+    border:1px solid  #b9c0c8;
+    .ui-dropdown-trigger.ui-state-default.ui-corner-right{
+      border-left:1px solid  #b9c0c8!important;
+    }
+  }
+}
+.labelDrop{
+  display: inline-block;
+  margin-left: 10px;
+  .ui-dropdown{
+    margin-left: 6px;
+  }
+  .ui-dropdown .ui-dropdown-trigger{
+    width: 1.8rem;
+  }
+  .ui-inputtext{
+    padding: .38rem .55rem;
+  }
+  .ui-dropdown .ui-dropdown-trigger .fa {
+    margin-top: .75em;
+    margin-left: .25em;
+  }
+  .ui-state-default{
+    border-color: #b9c0c8;
+  }
+  .ui-dropdown-panel .ui-dropdown-item{
+    padding: .25rem ;
+  }
+}
+.lawHeader{
+  .labelDrop{
+    .ui-widget.ui-state-default.ui-corner-all.ui-helper-clearfix{
+      width: 129px!important;
+    }
+  }
+}
+
+// 黑名单左侧树
+.intelli{
+  .ui-treenode{
+    position: relative;
+    .rightStyle{
+      display: inline-block;
+      width: 70px;
+      //overflow: hidden;
+      //position: absolute;
+      //right: 2px;
+      text-align: right;
+    }
+  }
+}
+
+// exportAll
+.exportAll{
+  .ng-untouched,.ng-dirty{
+    display: inline-block;
+    width: 155px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .row{
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+// 鼠标样式
+.cursor{
+  cursor: pointer;
+}
+
+// mask
+.mask-container {
+  &.ui-widget-content {
+    border: none;
+    background: transparent;
+    .ui-panel-content {
+      padding: 0;
+    }
+  }
+}
+// header 语言选择
+.lang-select .yywl-select-button .select-button-item {
+  color: #fff;
+}
+.home-page {
+  .ui-blockui {
+    opacity: .3;
+  }
+}
+
+.bigscreens {
+  a {
+    color: #65aaef !important;
+    text-decoration: underline;
+  }
+}
+.ui-state-disabled, .ui-widget:disabled, input:disabled {
+  background-color: #ccc;
+  border-color: #888;
+  opacity: 0.4;
+}
+a.disabled {
+  color: inherit;
+  cursor: default;
+}
